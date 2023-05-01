@@ -33,8 +33,8 @@ export default {
 	methods: {
 		// 跳转到下一页
 		toPass() {
-			uni.switchTab({
-				url: '/pages/index/index'
+			uni.navigateTo({
+				url: './Guide3'
 			});
 		}
 	},
@@ -101,4 +101,5 @@ export default {
 	position: absolute;
 	top: 81vh;
 	left: 27vw;
-}</style>
+}
+</style>

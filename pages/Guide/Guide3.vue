@@ -1,15 +1,21 @@
 <template>
 	<view class="container">
-		<view class="mian">
-			<img src="../../static/image/guide/guide.png">
+		<view class="topTitle">
+			请选择性别
 		</view>
-		<view class="textTitle">
-			全新动态展示
-		</view>
-		<view class="point">
-			<view></view>
-			<view></view>
-			<view></view>
+		<view class="main">
+			<view :class="{ sexStyle1: sexStyleValue == 1 }" @click="changeNan()" id="nanStyle">
+				<img src="../../static/image/guide/nan.png" alt="">
+				<view>
+					男
+				</view>
+			</view>
+			<view :class="{ sexStyle2: sexStyleValue == 2 }" @click="changeNv()" id="nvStyle">
+				<img src="../../static/image/guide/nv.png" alt="">
+				<view>
+					女
+				</view>
+			</view>
 		</view>
 		<view class="bottom" @click="toPass">
 			下一步
@@ -21,7 +27,7 @@
 export default {
 	data() {
 		return {
-
+			sexStyleValue: 0
 		}
 	},
 	onLoad(options) {
@@ -33,9 +39,26 @@ export default {
 	methods: {
 		// 跳转到下一页
 		toPass() {
-			uni.switchTab({
-				url: '/pages/index/index'
+			uni.navigateTo({
+				url: './Guide4'
 			});
+		},
+		// 选择男
+		changeNan() {
+			if (this.sexStyleValue == 1) {
+				this.sexStyleValue = 0
+			} else {
+				this.sexStyleValue = 1;
+			}
+		},
+		// 选择女
+		changeNv() {
+			if (this.sexStyleValue == 2) {
+				this.sexStyleValue = 0
+			} else {
+				this.sexStyleValue = 2;
+
+			}
 		}
 	},
 }
@@ -44,50 +67,38 @@ export default {
 <style scoped>
 .container {
 	position: relative;
-	width: 100vw;
-	height: 70vh;
-	background-image: url(../../static/image/beijing.png);
-	background-repeat: no-repeat;
-	background-size: 100% 92%;
-	background-position: 0 100rpx;
-	;
 }
 
-.mian {
-	margin: auto;
+.topTitle {
 	position: absolute;
-	top: 20vh;
-	right: 17vw;
+	top: 70rpx;
+	left: 70rpx;
+	font-size: 40rpx;
+	color: #707070;
 }
 
-.textTitle {
-	position: absolute;
-	bottom: -40rpx;
-	left: 34%;
-	font-size: 48rpx;
-}
-
-.point {
-	width: 200rpx;
-	height: 20rpx;
-	position: absolute;
-	bottom: -100rpx;
-	left: 39%;
+.main {
 	display: flex;
+	position: absolute;
 	justify-content: space-evenly;
-	align-items: center;
+	width: 100%;
+	height: 380rpx;
+	position: absolute;
+	top: 350rpx;
 }
 
-.point view {
-	border-radius: 50%;
-	width: 16rpx;
-	height: 16rpx;
-	background-color: #b4aafc;
+.main>view {
+	/* border: 2rpx solid #ccc; */
+	width: 39%;
+	border-radius: 28rpx;
+	background: #FFFFFF;
+	box-shadow: 20px 20px 60px #d9d9d9,
+		-20px -20px 60px #ffffff;
+	padding-top: 30rpx;
 }
 
-.point view:nth-child(3) {
-	background-color: #6C5DD3;
-
+.main view view {
+	margin-left: 66rpx;
 }
 
 .bottom {
@@ -101,4 +112,13 @@ export default {
 	position: absolute;
 	top: 81vh;
 	left: 27vw;
-}</style>
+}
+
+.sexStyle1 {
+	background: #5dd8d0 !important;
+}
+
+.sexStyle2 {
+	background: #ECB0CD !important;
+}
+</style>
