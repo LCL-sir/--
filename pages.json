@@ -26,6 +26,33 @@
 				"enablePullDownRefresh": false
 			}
 
+		}, {
+			"path": "pages/Guide/Guide",
+			"style": {
+				"navigationBarTitleText": "易动",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/Guide/Guide1",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/Guide/Guide2",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/trends/trends",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
 		}
 	],
 	"globalStyle": {
@@ -41,24 +68,30 @@
 		"backgroundColor": "#ffffff",
 		"list": [{
 				"pagePath": "pages/index/index",
-				"iconPath": "static/image/index.png",
-				"selectedIconPath": "static/image/my.png",
+				"iconPath": "static/image/tabbar_shouye.png",
+				"selectedIconPath": "static/image/tabbar_shouye.png",
 				"text": "跑鸭"
 			}, {
-				"pagePath": "pages/runbu/runbu",
-				"iconPath": "static/image/runbu.png",
-				"selectedIconPath": "static/image/runbu.png",
+				"pagePath": "pages/trends/trends",
+				"iconPath": "static/image/tabbar_dongtai.png",
+				"selectedIconPath": "static/image/tabbar_dongtai.png",
 				"text": "动态"
 			},
 			{
+				"pagePath": "pages/runbu/runbu",
+				"iconPath": "static/image/tabbar_paobu.png",
+				"selectedIconPath": "static/image/tabbar_paobu.png",
+				"text": ""
+			},
+			{
 				"pagePath": "pages/square/square",
-				"iconPath": "static/image/square.png",
-				"selectedIconPath": "static/image/square.png",
+				"iconPath": "static/image/tabbar_guangchang.png",
+				"selectedIconPath": "static/image/tabbar_guangchang.png",
 				"text": "广场"
 			}, {
 				"pagePath": "pages/my/my",
-				"iconPath": "static/image/my.png",
-				"selectedIconPath": "static/image/my.png",
+				"iconPath": "static/image/tabbar_geren.png",
+				"selectedIconPath": "static/image/tabbar_geren.png",
 				"text": "个人"
 			}
 		]

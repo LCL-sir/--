@@ -1,7 +1,15 @@
 <script>
 	export default {
 		onLaunch: function() {
-			console.log('App Launch')
+			// console.log('App Launch')
+			const GuideValue = uni.getStorageSync('GuideValue');
+			console.log(GuideValue=="")
+			if(GuideValue==""){
+				// 本地没有缓存数据，进入引导页
+				uni.reLaunch({
+					url: './pages/Guide/Guide'
+				});
+			}
 		},
 		onShow: function() {
 			console.log('App Show')
