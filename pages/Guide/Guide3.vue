@@ -4,13 +4,13 @@
 			请选择性别
 		</view>
 		<view class="main">
-			<view :class="{ sexStyle1: sexStyleValue == 1 }" @click="changeNan()" id="nanStyle">
+			<view :class="{ sexStyle1: sexStyleValue == 1 }" @click="changeNan()">
 				<img src="../../static/image/guide/nan.png" alt="">
 				<view>
 					男
 				</view>
 			</view>
-			<view :class="{ sexStyle2: sexStyleValue == 2 }" @click="changeNv()" id="nvStyle">
+			<view :class="{ sexStyle2: sexStyleValue == 2 }" @click="changeNv()">
 				<img src="../../static/image/guide/nv.png" alt="">
 				<view>
 					女
