@@ -58,7 +58,49 @@
 					{{ runbuTypeValue[runbuType] }}
 				</view>
 			</view>
-			<view class="main_right" v-if="sexStyleValue == 2">记录</view>
+			<view class="main_right" v-if="sexStyleValue == 2">
+				<view class="right_top">
+					<view class="runSun">
+						<view>0.00</view>
+						<view>公里</view>
+					</view>
+					<view class="runren">
+						<img src="../../static/image/runbu/jilurun.png" alt="">
+					</view>
+				</view>
+				<view class="jiluka">
+					<view class="jiluka1">
+						<view>
+							<view class="jiluNumber">0.00km</view>
+							<view>累计跑量</view>
+						</view>
+						<view>
+							<view class="jiluNumber">0.00小时</view>
+							<view>总时长</view>
+						</view>
+						<view>
+							<view class="jiluNumber">0大卡</view>
+							<view>总消耗</view>
+						</view>
+					</view>
+					<view class="jiluka2">
+						<view>
+							<view class="jiluNumber">0.00km</view>
+							<view>平均跑量</view>
+						</view>
+						<view>
+							<view class="jiluNumber">0'00"</view>
+							<view>平均倍速</view>
+						</view>
+						<view>
+							<view class="jiluNumber">0天</view>
+							<view>最长续航</view>
+						</view>
+					</view>
+				</view>
+				<view class="xian"></view>
+				<view class="bottomTitle">加油！快去跑一次步吧~</view>
+			</view>
 		</view>
 
 	</view>
@@ -295,5 +337,62 @@ export default {
 	position: absolute;
 	bottom: 88rpx;
 	left: 268rpx;
+}
+
+.right_top {
+	height: 270rpx;
+}
+
+.runSun {
+	margin-left: 76rpx;
+}
+
+.runSun>view:nth-child(1) {
+	font-size: 80rpx;
+}
+
+.runSun>view:nth-child(2) {
+	margin-left: 71px;
+	font-size: 21px;
+}
+
+.runren {
+	position: relative;
+	left: 432rpx;
+	top: -154rpx;
+}
+
+.jiluka {
+	height: 420rpx;
+	margin: 0 56rpx;
+	border-radius: 50rpx;
+	background: url(../../static/image/runbu/bg.png) no-repeat 45% 54%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+
+.jiluka .jiluka1,
+.jiluka .jiluka2 {
+	display: flex;
+	justify-content: space-around
+}
+
+.jiluka .jiluka1 .jiluNumber,
+.jiluka .jiluka2 .jiluNumber {
+	font-size: 40rpx;
+}
+
+.xian {
+	width: 100vw;
+	height: 16rpx;
+	margin-top: 28rpx;
+	background-color: #dcdfe3;
+}
+
+.bottomTitle {
+	text-align: center;
+	margin-top: 72rpx;
+	font-size: 36rpx;
 }
 </style>
