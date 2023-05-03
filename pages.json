@@ -11,7 +11,7 @@
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "易动",
-				"navigationBarBackgroundColor":"#6C5DD3"
+				"navigationBarBackgroundColor": "#6C5DD3"
 			}
 		},
 		{
@@ -74,28 +74,25 @@
 			"path": "pages/trends/trends",
 			"style": {
 				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#01040D"
+			}
+		},
+		{
+			"path": "pages/countdown/countdown",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/trueRun/trueRun",
+			"style": {
+				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
 		}
-	    ,{
-            "path" : "pages/countdown/countdown",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/trueRun/trueRun",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
