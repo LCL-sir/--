@@ -110,31 +110,31 @@
 		"list": [
 			{
 				"pagePath": "pages/index/index",
-				"iconPath": "static/image/tabbar_shouye.png",
+				"iconPath": "static/image/tabbar_shouyeoff.png",
 				"selectedIconPath": "static/image/tabbar_shouye.png",
 				"text": "主页"
 			},
 			{
 				"pagePath": "pages/trends/trends",
-				"iconPath": "static/image/tabbar_dongtai.png",
+				"iconPath": "static/image/tabbar_dongtaioff.png",
 				"selectedIconPath": "static/image/tabbar_dongtai.png",
 				"text": "日历"
 			},
 			{
 				"pagePath": "pages/runbu/runbu",
-				"iconPath": "static/image/tabbar_paobu.png",
+				"iconPath": "static/image/tabbar_paobuoff.png",
 				"selectedIconPath": "static/image/tabbar_paobu.png",
 				"text": "Let'go"
 			},
 			{
 				"pagePath": "pages/square/square",
-				"iconPath": "static/image/tabbar_guangchang.png",
+				"iconPath": "static/image/tabbar_guangchangoff.png",
 				"selectedIconPath": "static/image/tabbar_guangchang.png",
 				"text": "社区"
 			},
 			{
 				"pagePath": "pages/my/my",
-				"iconPath": "static/image/tabbar_geren.png",
+				"iconPath": "static/image/tabbar_gerenoff.png",
 				"selectedIconPath": "static/image/tabbar_geren.png",
 				"text": "我的"
 			}
