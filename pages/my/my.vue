@@ -56,7 +56,7 @@
 			</view>
 		</view>
 		<view class="userInfo">
-			<view>
+			<view @click="toUserInfo()">
 				<view>个人信息</view>
 				<view>></view>
 			</view>
@@ -90,19 +90,24 @@ export default {
 
 	},
 	methods: {
-		tomyRunInfo(){
+		tomyRunInfo() {
 			uni.navigateTo({
 				url: '../myRunInfo/myRunInfo'
 			});
 		},
-		totizhongInfo(){
+		totizhongInfo() {
 			uni.navigateTo({
 				url: '../tizhongInfo/tizhongInfo'
 			});
 		},
-		tohotNum(){
+		tohotNum() {
 			uni.navigateTo({
 				url: '../hotNum/hotNum'
+			});
+		},
+		toUserInfo() {
+			uni.navigateTo({
+				url: '../userInfo/userInfo'
 			});
 		}
 	},
@@ -198,9 +203,11 @@ export default {
 .zhoubian .zhoubianList img {
 	margin-right: 10rpx;
 }
+
 .userInfo {
 	margin-top: 40rpx;
 }
+
 .userInfo>view {
 	border-bottom: 1px solid #ccc;
 	display: flex;
