@@ -112,17 +112,22 @@
 				"navigationBarTitleText": "我的运动记录",
 				"enablePullDownRefresh": false
 			}
+		},
+		{
+			"path": "pages/tizhongInfo/tizhongInfo",
+			"style": {
+				"navigationBarTitleText": "我的体重记录",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/hotNum/hotNum",
+			"style": {
+				"navigationBarTitleText": "我的热量记录",
+				"enablePullDownRefresh": false
+			}
 		}
-	    ,{
-            "path" : "pages/tizhongInfo/tizhongInfo",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "我的体重记录",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

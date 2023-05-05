@@ -20,7 +20,7 @@
 				<span>17</span>
 				<view style="margin-top: 5px;">体重记录/天</view>
 			</view>
-			<view>
+			<view @click="tohotNum()">
 				<img src="../../static/image/my/hot.png" alt="">
 				<span>6</span>
 				<view>热量记录/天</view>
@@ -98,6 +98,11 @@ export default {
 		totizhongInfo(){
 			uni.navigateTo({
 				url: '../tizhongInfo/tizhongInfo'
+			});
+		},
+		tohotNum(){
+			uni.navigateTo({
+				url: '../hotNum/hotNum'
 			});
 		}
 	},
