@@ -25,7 +25,7 @@
 						{{ item.live }}
 					</view>
 					<view>
-						<img src="../../static/image/square/pl.png" alt="">
+						<img src="../../static/image/square/pl.png"  @click="pinglun(item)">
 						{{ item.pl }}
 					</view>
 					<view>
@@ -88,6 +88,12 @@ export default {
 		//点击分享
 		fenxiang(e) {
 			
+		},
+		// 点击评论
+		pinglun(){
+			uni.navigateTo({
+				url: '../youpinglun/youpinglun'
+			});
 		}
 	},
 }

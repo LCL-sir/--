@@ -126,6 +126,13 @@
 				"navigationBarTitleText": "我的热量记录",
 				"enablePullDownRefresh": false
 			}
+		},
+		{
+			"path": "pages/youpinglun/youpinglun",
+			"style": {
+				"navigationBarTitleText": "评论",
+				"enablePullDownRefresh": false
+			}
 		}
 	],
 	"globalStyle": {
