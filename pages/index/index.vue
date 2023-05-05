@@ -1,116 +1,107 @@
 <template>
 	<view class="container">
-		<view>
-			<view class="title1">累计跑量 > </view>
-			<span class="title2">0.00</span>
-			<span class="title3">Km</span>
-		</view>
-		<view class="week">
-			<view class="title1" style="margin-top:20px">本周跑量 > </view>
-			<img src="../../static/image/index/zhousun.png" alt="">
-		</view>
-		<view class="liSi">
+		<view class="top">
 			<view>
-				<img src="../../static/image/index/yundong.png" alt="">
-				<span>活动</span>
+				<img src="../../static/image/index/readme.png" alt="">
 			</view>
 			<view>
-				<img src="../../static/image/index/hot.png" alt="">
-				<span>动态</span>
+				<img src="../../static/image/index/xinxi.png" alt="">
 			</view>
 			<view>
-				<img src="../../static/image/index/jiaoxue.png" alt="">
-				<span>教程</span>
-			</view>
-			<view>
-				<img src="../../static/image/index/xunzhang.png" alt="">
-				<span>勋章</span>
+				<img src="../../static/image/index/ling.png" alt="">
 			</view>
 		</view>
+		<view class="Search" @click="toSearch()">
+			<img src="../../static/image/index/Search.png" alt="">
+		</view>
+		<view class="sheng">
+			<img src="../../static/image/index/sheng.png" alt="">
+		</view>
+		<view class="xunlian">
+			训练
+		</view>
+		<view class="xunList">
+			<view>
+				<img src="../../static/image/index/01.png" alt="">
+			</view>
+			<view>
+				<img src="../../static/image/index/02.png" alt="">
+			</view>
+			<view>
+				<img src="../../static/image/index/04.png" alt="">
+			</view>
+			<view>
+				<img src="../../static/image/index/05.png" alt="">
+			</view>
+		</view>
+		<view class="xunlian">
+			活动
+		</view>
+		<button @click="toPass()">123</button>
 	</view>
 </template>
 
 <script>
-export default {
-	data() {
-		return {
+	export default {
+		data() {
+			return {
 
+			}
+		},
+		onLoad() {
+			// 只要页面显示 就往本地存储变量，保证用户不在打开引导页
+			try {
+				uni.setStorageSync('GuideValue', '1');
+			} catch (e) {
+				console.log(e)
+			}
+		},
+		methods: {
+			// 跳转到下一页
+			toPass() {
+				uni.navigateTo({
+					url: '../index_malaInfo/index_malaInfo'
+				});
+			},
+			toSearch() {
+				uni.navigateTo({
+					url: '../Search/Search'
+				});
+			},
 		}
-	},
-	onLoad() {
-		// 只要页面显示 就往本地存储变量，保证用户不在打开引导页
-		try {
-			uni.setStorageSync('GuideValue', '1');
-		} catch (e) {
-			console.log(e)
-		}
-	},
-	methods: {
-
 	}
-}
 </script>
 
 <style>
-.container {
-	background-color: #6C5DD3;
-	width: 100vw;
-	height: 85.8vh;
-}
+	.container {
+		padding: 0 40rpx;
+	}
 
-.container .title1 {
-	position: relative;
-	top: 88rpx;
-	left: 80rpx;
-	color: #ffffff;
-	font-size: 40rpx;
-}
+	.container .top {
+		display: flex;
+		justify-content: space-between;
+	}
 
-.container .title2 {
-	position: relative;
-	color: #fff;
-	font-size: 35px;
-	top: 53px;
-	left: 60px;
-}
+	.container .top view:nth-child(2) {
+		margin-left: 400rpx;
+	}
 
-.container .title3 {
-	position: relative;
-	top: 54px;
-	left: 67px;
-	color: #fff;
-}
+	.container .Search {
+		margin-top: 40rpx;
+	}
 
-.container .week img {
-	position: relative;
-	top: 65px;
-	left: 65px;
-}
+	.container .sheng {
+		margin-top: 40rpx;
+	}
 
-.container .liSi {
-	display: flex;
-	position: relative;
-	top: 91px;
-	margin: 0 20px;
-	height: 200px;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
-}
+	.container .xunlian {
+		color: #334154;
+		margin-top: 20rpx;
+	}
 
-.container .liSi view {
-	width: 45%;
-	height: 150rpx;
-	border-radius: 16rpx;
-	background: url(../../static/image/index/bj.png) no-repeat;
-}
-.container .liSi>view img{
-	margin: 10px;
-}
-.container .liSi>view span{
-	position: relative;
-    top: -21px;
-    font-size: 20px;
-    font-weight: 600;
-}
+	.container .xunList {
+		display: flex;
+		justify-content: space-around;
+		margin-top: 20rpx;
+	}
 </style>

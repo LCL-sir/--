@@ -10,8 +10,8 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "易动",
-				"navigationBarBackgroundColor": "#6C5DD3"
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff" 
 			}
 		},
 		{
@@ -92,7 +92,25 @@
 				"enablePullDownRefresh": false
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/index_malaInfo/index_malaInfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "易动马拉松主题变速跑",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Search/Search",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
