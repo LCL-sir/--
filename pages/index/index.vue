@@ -37,15 +37,12 @@
 		<view class="xunlian">
 			活动
 		</view>
-		<view>
-
+		<view class="huodong">
 			<uni-swiper-dot :info="info" :current="current" field="content" :mode="mode">
 				<swiper class="swiper-box" @change="change" @click="toPass()">
 					<swiper-item v-for="(item, index) in info" :key="index">
 						<view class="swiper-item">
-							<!-- {{ item.content }} -->
-							<img :src="item.content" alt="">
-
+							<img :src="item.content">
 						</view>
 					</swiper-item>
 				</swiper>
@@ -128,6 +125,9 @@ export default {
 .container .xunList {
 	display: flex;
 	justify-content: space-around;
+	margin-top: 20rpx;
+}
+.container .huodong {
 	margin-top: 20rpx;
 }
 </style>
