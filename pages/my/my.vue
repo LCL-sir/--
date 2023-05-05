@@ -10,7 +10,7 @@
 			<view>我的数据</view>
 		</view>
 		<view class="myDataNumber">
-			<view>
+			<view @click="tomyRunInfo()">
 				<img src="../../static/image/my/run.png" alt="">
 				<span>35</span>
 				<view>运动记录/分钟</view>
@@ -90,7 +90,11 @@ export default {
 
 	},
 	methods: {
-
+		tomyRunInfo(){
+			uni.navigateTo({
+				url: '../myRunInfo/myRunInfo'
+			});
+		}
 	},
 }
 </script>
