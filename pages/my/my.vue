@@ -15,7 +15,7 @@
 				<span>35</span>
 				<view>运动记录/分钟</view>
 			</view>
-			<view>
+			<view @click="totizhongInfo()">
 				<img src="../../static/image/my/node.png" alt="">
 				<span>17</span>
 				<view style="margin-top: 5px;">体重记录/天</view>
@@ -93,6 +93,11 @@ export default {
 		tomyRunInfo(){
 			uni.navigateTo({
 				url: '../myRunInfo/myRunInfo'
+			});
+		},
+		totizhongInfo(){
+			uni.navigateTo({
+				url: '../tizhongInfo/tizhongInfo'
 			});
 		}
 	},

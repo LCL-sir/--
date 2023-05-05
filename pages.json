@@ -113,7 +113,16 @@
 				"enablePullDownRefresh": false
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/tizhongInfo/tizhongInfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的体重记录",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
