@@ -8,16 +8,20 @@
 			<view>
 				<input type="text" placeholder="请输入密码" />
 			</view>
-			<view @click="tomy()">
+			<view @click="tomy('fade')">
 				登录
 			</view>
+			<uni-transition ref="ani" custom-class="transition" :mode-class="modeClass" :styles="styles" :show="show"
+				class="donghua">
+				<img src="../../static/image/guide/secc.png" alt="">
+			</uni-transition>
 		</view>
 		<view class="duo">
 			<img src="../../static/image/login/duo.png" alt="">
 		</view>
 		<view class="yue">
 			<view @click="dian" :class="dianStyle ? '' : 'dian'"></view>
-			<view>我已阅读并同意易动用户协议和隐私政策</view>
+			<view>已阅读并同意易动用户协议和隐私政策</view>
 		</view>
 	</view>
 </template>
@@ -26,17 +30,29 @@
 export default {
 	data() {
 		return {
-			dianStyle: 'flase'
+			dianStyle: 'flase',
+			show: false,
+			modeClass: 'fade',
+			styles: {}
 		}
+	},
+	onLoad() {
+		this.styles = {}
+
 	},
 	methods: {
 		dian() {
 			this.dianStyle = !this.dianStyle;
 		},
-		tomy() {
-			uni.switchTab({
+		tomy(type) {
+			console.log(type)
+			this.show = !this.show
+			this.modeClass = type
+			setTimeout(()=>{
+				uni.switchTab({
 				url: '../my/my'
 			});
+			},1000)
 		}
 	}
 }
@@ -56,7 +72,9 @@ export default {
 	margin-left: 20rpx;
 }
 
-.container .sk>view {
+.container .sk>view:nth-child(1),
+.container .sk>view:nth-child(2),
+.container .sk>view:nth-child(3) {
 	width: 80%;
 	height: 92rpx;
 	background-color: rgba(255, 255, 255, 0.2);
@@ -103,4 +121,20 @@ export default {
 	background-color: rgb(6, 201, 39);
 	border: 0;
 }
-</style>
+
+.donghua {
+	background-color: #e9e6e8;
+	float: right;
+	height: 80px;
+	position: relative;
+	left: -169px;
+	top: -65px;
+	border-radius: 10px;
+	width: 80px;
+}
+
+.donghua img {
+	height: 68px;
+	margin-left: 7px;
+	margin-top: 4px;
+}</style>
