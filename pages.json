@@ -82,14 +82,16 @@
 			"path": "pages/countdown/countdown",
 			"style": {
 				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#6C5DD3"
 			}
 		},
 		{
 			"path": "pages/trueRun/trueRun",
 			"style": {
 				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
+				"enablePullDownRefresh": false,
+				"transparentTitle":"always"
 			}
 		},
 		{
