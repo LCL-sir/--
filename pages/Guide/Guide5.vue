@@ -7,6 +7,9 @@
 			<view class="mian_black">
 				cm
 			</view>
+			<view class="shu">
+				<input type="number" focus confirm-type="next">
+			</view>
 		</view>
 		<view class="bottom" @click="toPass">
 			完成
@@ -81,5 +84,13 @@ export default {
 	position: absolute;
 	top: 81vh;
 	left: 27vw;
+}
+
+.shu {
+	border-bottom: 1px solid #ccc;
+	width: 122rpx;
+	position: relative;
+	top: 120rpx;
+	padding-left: 80rpx;
 }
 </style>
