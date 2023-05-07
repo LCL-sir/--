@@ -1,27 +1,32 @@
 <template>
-	<view class="container">
-		<view class="top">登录/注册</view>
-		<view class="sk">
-			<view>
-				<input type="text" placeholder="请输入账号" />
-			</view>
-			<view>
-				<input type="text" placeholder="请输入密码" />
-			</view>
-			<view @click="tomy('fade')">
-				登录
-			</view>
-			<uni-transition ref="ani" custom-class="transition" :mode-class="modeClass" :styles="styles" :show="show"
-				class="donghua">
-				<img src="../../static/image/guide/secc.png" alt="">
-			</uni-transition>
+	<view :class="showLoading ? 'loadingStyle' : 'container'">
+		<view v-if="showLoading">
+			<img src="../../static/image/guide/loading.gif" alt="">
 		</view>
-		<view class="duo">
-			<img src="../../static/image/login/duo.png" alt="">
-		</view>
-		<view class="yue">
-			<view @click="dian" :class="dianStyle ? '' : 'dian'"></view>
-			<view>已阅读并同意易动用户协议和隐私政策</view>
+		<view v-if="!showLoading">
+			<view class="top">登录/注册</view>
+			<view class="sk">
+				<view>
+					<input type="text" placeholder="请输入账号" />
+				</view>
+				<view>
+					<input type="text" placeholder="请输入密码" />
+				</view>
+				<view @click="tomy('fade')">
+					登录
+				</view>
+				<uni-transition ref="ani" custom-class="transition" :mode-class="modeClass" :styles="styles" :show="show"
+					class="donghua">
+					<img src="../../static/image/guide/secc.png" alt="">
+				</uni-transition>
+			</view>
+			<view class="duo">
+				<img src="../../static/image/login/duo.png" alt="">
+			</view>
+			<view class="yue">
+				<view @click="dian" :class="dianStyle ? '' : 'dian'"></view>
+				<view>已阅读并同意易动用户协议和隐私政策</view>
+			</view>
 		</view>
 	</view>
 </template>
@@ -33,12 +38,15 @@ export default {
 			dianStyle: 'flase',
 			show: false,
 			modeClass: 'fade',
-			styles: {}
+			styles: {},
+			showLoading: true
 		}
 	},
 	onLoad() {
 		this.styles = {}
-
+		setTimeout(() => {
+			this.showLoading = false
+		}, 1500)
 	},
 	methods: {
 		dian() {
@@ -63,7 +71,19 @@ export default {
 	background-color: #1E0D48;
 	width: 100vw;
 	height: 90.2vh;
-	padding: 40rpx 40rpx 0 40rpx;
+	padding: 128rpx 40rpx 0 40rpx;
+}
+
+.loadingStyle {
+	background-color: #01000a;
+	width: 100vw;
+	height: 100vh;
+}
+
+.loadingStyle img {
+	width: 100%;
+	position: relative;
+	top: 400rpx;
 }
 
 .container .top {

@@ -85,6 +85,7 @@
 		background-color: #01040D;
 		border-top: 1px solid #01040D;
 		color: #FFFFFF;
+		padding-top: 88rpx;
 	}
 
 	.container .top {

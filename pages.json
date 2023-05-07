@@ -75,7 +75,8 @@
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false,
-				"navigationBarBackgroundColor": "#01040D"
+				"navigationBarBackgroundColor": "#01040D",
+				"navigationStyle":"custom"
 			}
 		},
 		{
@@ -141,7 +142,8 @@
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false,
-				"navigationBarBackgroundColor": "#1E0D48"
+				"navigationBarBackgroundColor": "#1E0D48",
+				"navigationStyle":"custom"
 			}
 		}
 	],
@@ -173,7 +175,7 @@
 				"pagePath": "pages/runbu/runbu",
 				"iconPath": "static/image/tabbar_paobuoff.png",
 				"selectedIconPath": "static/image/tabbar_paobu.png",
-				"text": "Let'go"
+				"text": "Let's go"
 			},
 			{
 				"pagePath": "pages/square/square",
