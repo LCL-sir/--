@@ -35,12 +35,12 @@ export default {
 		toPass() {
 			// 缓存到本地，下次跳过引导页
 			uni.setStorageSync('GuideValue', '1');
-			uni.navigateTo({
-				url: '../userInfo/userInfo'
-			});
-			// uni.switchTab({
-			// 	url: '/pages/runbu/runbu'
+			// uni.navigateTo({
+			// 	url: '../userInfo/userInfo'
 			// });
+			uni.switchTab({
+				url: '/pages/runbu/runbu'
+			});
 		}
 	},
 }

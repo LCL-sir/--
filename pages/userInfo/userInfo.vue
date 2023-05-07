@@ -48,11 +48,11 @@ export default {
 			console.log(type)
 			this.show = !this.show
 			this.modeClass = type
-			setTimeout(()=>{
-				uni.switchTab({
-				url: '../my/my'
-			});
-			},1000)
+			setTimeout(() => {
+				uni.navigateTo({
+					url: '../Guide/Guide'
+				});
+			}, 1000)
 		}
 	}
 }
@@ -137,4 +137,5 @@ export default {
 	height: 68px;
 	margin-left: 7px;
 	margin-top: 4px;
-}</style>
+}
+</style>

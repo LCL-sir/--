@@ -7,7 +7,8 @@
 			if(GuideValue==""){
 				// 本地没有缓存数据，进入引导页
 				uni.reLaunch({
-					url: './pages/Guide/Guide'
+					// url: './pages/Guide/Guide'
+					url: './pages/userInfo/userInfo'
 				});
 			}
 		},
