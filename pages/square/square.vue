@@ -3,7 +3,7 @@
 		<view class="top">
 			<view class="topTitle">社区</view>
 			<view class="topUser">
-				<view v-for="(item, index) in  userList" :key="index">
+				<view v-for="(item, index) in  userList" :key="index" @click="pinglun(item)">
 					<img :src="item">
 				</view>
 			</view>
@@ -25,7 +25,7 @@
 						{{ item.live }}
 					</view>
 					<view>
-						<img src="../../static/image/square/pl.png"  @click="pinglun(item)">
+						<img src="../../static/image/square/pl.png" >
 						{{ item.pl }}
 					</view>
 					<view>
