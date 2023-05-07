@@ -1,7 +1,7 @@
 <template>
 	<view class="container">
 		<view class="mian">
-			<img src="../../static/image/guide/guide2.png">
+			<img src="static/image/guide/guide2.png">
 		</view>
 		<view class="textTitle">
 			针对跑者的专业软件

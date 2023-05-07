@@ -23,28 +23,28 @@
 						<view class="l1">晨跑</view>
 						<view class="l2">6：16 &nbsp;&nbsp;&nbsp; 1556步</view>
 						<view class="l3">
-							<img src="../../static/image/trends/yes.png" alt="">
+							<img src="static/image/trends/yes.png" alt="">
 						</view>
 					</view>
 					<view class="t1">
 						<view>晚间跑步</view>
 						<view class="l2">18：30 &nbsp;&nbsp;&nbsp; 3554步</view>
 						<view class="l3">
-							<img src="../../static/image/trends/yes.png" alt="">
+							<img src="static/image/trends/yes.png" alt="">
 						</view>
 					</view>
 					<view class="t1">
 						<view>健步</view>
 						<view class="l2">12：00 &nbsp;&nbsp;&nbsp; 5000步</view>
 						<view class="l4">
-							<img src="../../static/image/trends/no.png" alt="">
+							<img src="static/image/trends/no.png" alt="">
 						</view>
 					</view>
 					<view class="t1">
 						<view>总运动量</view>
 						<view class="l2">2023.05.01 &nbsp;&nbsp;&nbsp; 7000步</view>
 						<view class="l4">
-							<img src="../../static/image/trends/no.png" alt="">
+							<img src="static/image/trends/no.png" alt="">
 						</view>
 					</view>
 				</view>

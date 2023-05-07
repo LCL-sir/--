@@ -1,7 +1,7 @@
 <template>
 	<view class="container">
 		<view>
-			<img src="../../static/image/my/userBook.png" alt="">
+			<img src="static/image/my/userBook.png" alt="">
 			<span>Dear 璐</span>
 			<span>易跑ID：123456789</span>
 		</view>
@@ -11,17 +11,17 @@
 		</view>
 		<view class="myDataNumber">
 			<view @click="tomyRunInfo()">
-				<img src="../../static/image/my/run.png" alt="">
+				<img src="static/image/my/run.png" alt="">
 				<span>35</span>
 				<view>运动记录/分钟</view>
 			</view>
 			<view @click="totizhongInfo()">
-				<img src="../../static/image/my/node.png" alt="">
+				<img src="static/image/my/node.png" alt="">
 				<span>17</span>
 				<view style="margin-top: 5px;">体重记录/天</view>
 			</view>
 			<view @click="tohotNum()">
-				<img src="../../static/image/my/hot.png" alt="">
+				<img src="static/image/my/hot.png" alt="">
 				<span>6</span>
 				<view>热量记录/天</view>
 			</view>
@@ -29,7 +29,7 @@
 		<view class="zhoubian">
 			<view>
 				<view class="zhoubianList">
-					<img src="../../static/image/my/xunzhang.png" alt="">
+					<img src="static/image/my/xunzhang.png" alt="">
 					<span>勋章墙</span>
 				</view>
 				<view>
@@ -38,7 +38,7 @@
 			</view>
 			<view>
 				<view class="zhoubianList">
-					<img src="../../static/image/my/jiangbei.png" alt="">
+					<img src="static/image/my/jiangbei.png" alt="">
 					<span>赛事</span>
 				</view>
 				<view>
@@ -47,7 +47,7 @@
 			</view>
 			<view>
 				<view class="zhoubianList">
-					<img src="../../static/image/my/qizi.png" alt="">
+					<img src="static/image/my/qizi.png" alt="">
 					<span>活动</span>
 				</view>
 				<view>

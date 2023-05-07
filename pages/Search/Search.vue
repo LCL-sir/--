@@ -1,7 +1,7 @@
 <template>
 	<view class="container">
 		<view class="Search">
-			<img src="../../static/image/index/zsou.png" alt="">
+			<img src="static/image/index/zsou.png" alt="">
 			<div class="shuru">
 				<input type="text" placeholder="搜索课程" />
 			</div>
@@ -9,7 +9,7 @@
 				推荐
 			</view>
 			<view>
-				<img src="../../static/image/index/datu.png" alt="">
+				<img src="static/image/index/datu.png" alt="">
 			</view>
 		</view>
 	</view>

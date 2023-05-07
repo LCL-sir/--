@@ -1,7 +1,7 @@
 <template>
 	<view :class="showLoading ? 'loadingStyle' : 'container'">
 		<view v-if="showLoading">
-			<img src="../../static/image/guide/loading.gif" alt="">
+			<img src="static\image\guide\loading.gif" alt="">
 		</view>
 		<view v-if="!showLoading">
 			<view class="top">登录/注册</view>
@@ -17,11 +17,11 @@
 				</view>
 				<uni-transition ref="ani" custom-class="transition" :mode-class="modeClass" :styles="styles" :show="show"
 					class="donghua">
-					<img src="../../static/image/guide/secc.png" alt="">
+					<img src="static/image/guide/secc.png" alt="">
 				</uni-transition>
 			</view>
 			<view class="duo">
-				<img src="../../static/image/login/duo.png" alt="">
+				<img src="static/image/login/duo.png" alt="">
 			</view>
 			<view class="yue">
 				<view @click="dian" :class="dianStyle ? '' : 'dian'"></view>

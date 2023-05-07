@@ -4,7 +4,7 @@
 			<view class="page-section page-section-gap">
 				<map :latitude="latitude" :longitude="longitude" :markers="covers">
 				</map>
-				<img src="../../static/image/runbu/point.png" class="mapImg">
+				<img src="static/image/runbu/point.png" class="mapImg">
 			</view>
 		</view>
 		<view class="bottom">
@@ -13,7 +13,7 @@
 				<view class="zhong">时间</view>
 			</view>
 			<view class="runBottom">
-				<img src="../../static/image/runbu/runOn.png" @click="stopRun()">
+				<img src="static/image/runbu/runOn.png" @click="stopRun()">
 			</view>
 			<view>
 				<view class="shu">0.0Km</view>
@@ -21,7 +21,7 @@
 			</view>
 		</view>
 		<view class="fan" @click="torunbu()">
-			<img src="../../static/image/runbu/fanhui.png" alt="">
+			<img src="static/image/runbu/fanhui.png" alt="">
 		</view>
 		<uni-popup ref="popup" type="bottom">
 			<view class="tan">
@@ -29,12 +29,12 @@
 				<view class="pao">跑步轨迹</view>
 				<view class="info">
 					<view>
-						<img src="../../static/image/runbu/info1.png" alt="">
+						<img src="static/image/runbu/info1.png" alt="">
 						<view>{{ sTime }}</view>
 						<view>时间</view>
 					</view>
 					<view>
-						<img src="../../static/image/runbu/info2.png" alt="">
+						<img src="static/image/runbu/info2.png" alt="">
 						<view>0.00km</view>
 						<view>公里</view>
 					</view>
@@ -42,10 +42,10 @@
 				<view class="map">
 					<map style="width: 100%; height: 100vh;" :latitude="latitude" :longitude="longitude" :markers="covers">
 					</map>
-					<img src="../../static/image/runbu/point.png" alt="">
+					<img src="static/image/runbu/point.png" alt="">
 				</view>
 				<view class="runBottom bBottom">
-					<img src="../../static/image/runbu/jieshu.png" @click="close()">
+					<img src="static/image/runbu/jieshu.png" @click="close()">
 				</view>
 			</view>
 		</uni-popup>
@@ -64,11 +64,11 @@ export default {
 			covers: [{
 				latitude: 39.909,
 				longitude: 116.39742,
-				iconPath: '../../../static/location.png'
+				iconPath: 'static/location.png'
 			}, {
 				latitude: 39.90,
 				longitude: 116.39,
-				iconPath: '../../../static/location.png'
+				iconPath: 'static/location.png'
 			}],
 			runTime: "0:00:00",
 			sTime: null

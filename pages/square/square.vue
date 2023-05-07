@@ -21,15 +21,15 @@
 				</view>
 				<view class="botList">
 					<view>
-						<img src="../../static/image/square/live.png" @click="botLive(item)">
+						<img src="static/image/square/live.png" @click="botLive(item)">
 						{{ item.live }}
 					</view>
 					<view>
-						<img src="../../static/image/square/pl.png" >
+						<img src="static/image/square/pl.png" >
 						{{ item.pl }}
 					</view>
 					<view>
-						<img src="../../static/image/square/fx.png" @click="fenxiang(item)">
+						<img src="static/image/square/fx.png" @click="fenxiang(item)">
 					</view>
 				</view>
 			</view>
@@ -41,24 +41,24 @@
 export default {
 	data() {
 		return {
-			userList: ["../../static/image/square/addUser.png", "../../static/image/square/list1.png", "../../static/image/square/list2.png", "../../static/image/square/list3.png", "../../static/image/square/list4.png"],
+			userList: ["static/image/square/addUser.png", "static/image/square/list1.png", "static/image/square/list2.png", "static/image/square/list3.png", "static/image/square/list4.png"],
 			PLList: [{
 				id: 0,
 				name: "Emily Cooper",
-				userImg: "../../static/image/square/userimg.png",
+				userImg: "static/image/square/userimg.png",
 				outTime: "34秒前",
 				title: "让我们一起加入吧！ ",
-				img: "../../static/image/square/Card.png",
+				img: "static/image/square/Card.png",
 				live: 1,
 				pl: 0
 			},
 			{
 				id: 1,
 				name: "Emily Cooper",
-				userImg: "../../static/image/square/userimg.png",
+				userImg: "static/image/square/userimg.png",
 				outTime: "34秒前",
 				title: "让我们一起加入吧！ ",
-				img: "../../static/image/square/Card.png",
+				img: "static/image/square/Card.png",
 				live: 1,
 				pl: 0
 			}],

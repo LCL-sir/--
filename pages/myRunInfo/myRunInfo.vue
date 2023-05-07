@@ -1,7 +1,7 @@
 <template>
 	<view class="container">
 		<view class="top">
-			<img src="../../static/image/my/userBook.png" alt="">
+			<img src="static/image/my/userBook.png" alt="">
 		</view>
 		<view class="main">
 			<view>运动距离:0.00Km</view>
@@ -17,7 +17,7 @@
 			</view>
 		</view>
 		<view>
-			<img src="../../static/image/my/myRun.png" alt="">
+			<img src="static/image/my/myRun.png" alt="">
 		</view>
 	</view>
 </template>

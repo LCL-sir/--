@@ -2,36 +2,36 @@
 	<view class="container">
 		<view class="top">
 			<view>
-				<img src="../../static/image/index/readme.png" alt="">
+				<img src="static/image/index/readme.png" alt="">
 			</view>
 			<view>
-				<img src="../../static/image/index/xinxi.png" alt="">
+				<img src="static/image/index/xinxi.png" alt="">
 			</view>
 			<view>
-				<img src="../../static/image/index/ling.png" alt="">
+				<img src="static/image/index/ling.png" alt="">
 			</view>
 		</view>
 		<view class="Search" @click="toSearch()">
-			<img src="../../static/image/index/Search.png" alt="">
+			<img src="static/image/index/Search.png" alt="">
 		</view>
 		<view class="sheng">
-			<img src="../../static/image/index/sheng.png" alt="">
+			<img src="static/image/index/sheng.png" alt="">
 		</view>
 		<view class="xunlian">
 			训练
 		</view>
 		<view class="xunList">
 			<view>
-				<img src="../../static/image/index/01.png" alt="">
+				<img src="static/image/index/01.png" alt="">
 			</view>
 			<view>
-				<img src="../../static/image/index/02.png" alt="">
+				<img src="static/image/index/02.png" alt="">
 			</view>
 			<view>
-				<img src="../../static/image/index/04.png" alt="">
+				<img src="static/image/index/04.png" alt="">
 			</view>
 			<view>
-				<img src="../../static/image/index/05.png" alt="">
+				<img src="static/image/index/05.png" alt="">
 			</view>
 		</view>
 		<view class="xunlian">
@@ -57,11 +57,11 @@ export default {
 	data() {
 		return {
 			info: [{
-				content: '../../static/image/index/l1.png'
+				content: 'static/image/index/l1.png'
 			}, {
-				content: '../../static/image/index/l2.png'
+				content: 'static/image/index/l2.png'
 			}, {
-				content: '../../static/image/index/l3.png'
+				content: 'static/image/index/l3.png'
 			}],
 			current: 0,
 			mode: 'round',

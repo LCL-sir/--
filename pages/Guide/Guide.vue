@@ -1,7 +1,7 @@
 <template>
 	<view class="container">
 		<view class="mian">
-			<img src="../../static/image/guide/guide1.png">
+			<img src="static/image/guide/guide1.png">
 		</view>
 		<view class="textTitle">
 			全新训练计划

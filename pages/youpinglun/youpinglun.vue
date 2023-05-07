@@ -1,6 +1,6 @@
 <template>
 	<view class="container">
-		<img src="../../static/image/square/pinglun.png" alt="">
+		<img src="static/image/square/pinglun.png" alt="">
 	</view>
 </template>
 

@@ -14,25 +14,25 @@
 						<view class="tan">
 							<view>
 								<view :class="{ tan3: runbuType == 1 }" @click="rundongtai(1)">
-									<img src="../../static/image/runbu/2.png" alt="">
+									<img src="static/image/runbu/2.png" alt="">
 								</view>
 								<span>跑步</span>
 							</view>
 							<view>
 								<view :class="{ tan3: runbuType == 2 }" @click="rundongtai(2)">
-									<img src="../../static/image/runbu/1.png" alt="">
+									<img src="static/image/runbu/1.png" alt="">
 								</view>
 								<span>健走</span>
 							</view>
 							<view>
 								<view :class="{ tan3: runbuType == 3 }" @click="rundongtai(3)">
-									<img src="../../static/image/runbu/3.png" alt="">
+									<img src="static/image/runbu/3.png" alt="">
 								</view>
 								<span>骑行</span>
 							</view>
 						</view>
 						<view class="off" @click="close()">
-							<img src="../../static/image/runbu/X.png" alt="">
+							<img src="static/image/runbu/X.png" alt="">
 						</view>
 					</uni-popup>
 				</view>
@@ -65,7 +65,7 @@
 						<view>公里</view>
 					</view>
 					<view class="runren">
-						<img src="../../static/image/runbu/jilurun.png" alt="">
+						<img src="static/image/runbu/jilurun.png" alt="">
 					</view>
 				</view>
 				<view class="jiluka">
