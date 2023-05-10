@@ -17,7 +17,8 @@
 				</view>
 				<view class="Title">{{ item.title }}</view>
 				<view class="hdImg">
-					<img :src="item.img" alt="">
+					<!-- <img :src="item.img" alt=""> -->
+					<image style="width: 80%; height: 200px;" mode="aspectFit" :src="item.img"></image>
 				</view>
 				<view class="botList">
 					<view>
@@ -48,7 +49,7 @@ export default {
 				userImg: "static/image/square/userimg.png",
 				outTime: "34秒前",
 				title: "让我们一起加入吧！ ",
-				img: "static/image/square/Card.png",
+				img: "../../static/image/square/Card.png",
 				live: 1,
 				pl: 0
 			},
@@ -58,7 +59,7 @@ export default {
 				userImg: "static/image/square/userimg.png",
 				outTime: "34秒前",
 				title: "让我们一起加入吧！ ",
-				img: "static/image/square/Card.png",
+				img: "../../static/image/square/Card1.png",
 				live: 1,
 				pl: 0
 			}],
@@ -149,6 +150,8 @@ export default {
 .mainList .hdImg {
 	text-align: center;
 	margin-top: 28rpx;
+	overflow: hidden;
+	width: 100%;
 }
 
 .mainList .botList {
