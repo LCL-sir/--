@@ -2,8 +2,8 @@
 	<view>
 		<view class="uni-padding-wrap uni-common-mt">
 			<view>
-				<video id="myVideo" src="../../static/video/video1.mp4" @error="videoErrorCallback" :danmu-list="danmuList"
-					enable-danmu danmu-btn controls autoplay="true"></video>
+				<video id="myVideo" :src="srcData" @error="videoErrorCallback" :danmu-list="danmuList" enable-danmu danmu-btn
+					controls autoplay="true"></video>
 			</view>
 			<!-- #ifndef MP-ALIPAY -->
 			<view class="haokan">
@@ -44,8 +44,19 @@
 						time: 3
 					}
 				],
-				danmuValue: ''
+				danmuValue: '',
+				srcData: '../../static/video/video1.mp4'
 			}
+		},
+		onLoad(options) {
+			if(options.id==undefined) {
+				return
+			}else {
+				this.srcData = options.id;
+			}
+			console.log(options)
+			console.log(options.id)
+		 	
 		},
 		onReady: function(res) {
 			// #ifndef MP-ALIPAY
@@ -74,6 +85,9 @@
 					rgb.push(color)
 				}
 				return '#' + rgb.join('')
+			},
+			huan(options){
+				this.srcData = options;
 			}
 		}
 	}

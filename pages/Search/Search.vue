@@ -11,7 +11,7 @@
 				推荐
 			</view>
 			<view>
-				<img src="static/image/index/datu.png" alt="">
+				<img src="static/image/index/datu.png" @click="toVideo()">
 			</view>
 		</view>
 		<uni-transition ref="ani" custom-class="transition" :mode-class="modeClass" :styles="styles" :show="show"
@@ -49,6 +49,11 @@
 						url: '../videoPage/videoPage'
 					});
 				}, 1000)
+			},
+			toVideo(){
+				uni.navigateTo({
+					url: '../videoPage/videoPage?id='+'../../static/video/video2.mp4'
+				});
 			}
 		},
 	}
