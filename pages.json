@@ -1,6 +1,5 @@
 {
-	"pages": [
-		{
+	"pages": [{
 			"path": "pages/runbu/runbu",
 			"style": {
 				"navigationBarTitleText": "易动",
@@ -76,7 +75,7 @@
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false,
 				"navigationBarBackgroundColor": "#01040D",
-				"navigationStyle":"custom"
+				"navigationStyle": "custom"
 			}
 		},
 		{
@@ -92,7 +91,7 @@
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false,
-				"transparentTitle":"always"
+				"transparentTitle": "always"
 			}
 		},
 		{
@@ -143,8 +142,15 @@
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false,
 				"navigationBarBackgroundColor": "#1E0D48",
-				"navigationStyle":"custom"
+				"navigationStyle": "custom"
 			}
+		}, {
+			"path": "pages/videoPage/videoPage",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
 		}
 	],
 	"globalStyle": {
@@ -158,8 +164,7 @@
 		"selectedColor": "#3cc51f",
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
-		"list": [
-			{
+		"list": [{
 				"pagePath": "pages/index/index",
 				"iconPath": "static/image/tabbar_shouyeoff.png",
 				"selectedIconPath": "static/image/tabbar_shouye.png",

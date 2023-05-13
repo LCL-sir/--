@@ -2,7 +2,7 @@
 	<view class="container">
 		<view class="Search">
 			<view class="kuang">
-				<img src="static/image/index/zsou.png" @click="imgClick()">
+				<img src="static/image/index/zsou.png" @click="imgClick('fade')">
 			</view>
 			<div class="shuru">
 				<input type="text" placeholder="搜索课程" />
@@ -14,6 +14,10 @@
 				<img src="static/image/index/datu.png" alt="">
 			</view>
 		</view>
+		<uni-transition ref="ani" custom-class="transition" :mode-class="modeClass" :styles="styles" :show="show"
+			class="donghua">
+			<img src="static/image/login/loding.gif" alt="">
+		</uni-transition>
 	</view>
 </template>
 
@@ -21,7 +25,11 @@
 	export default {
 		data() {
 			return {
-
+				dianStyle: 'flase',
+				show: false,
+				modeClass: 'fade',
+				styles: {},
+				showLoading: true
 			}
 		},
 		onLoad(options) {
@@ -31,8 +39,16 @@
 
 		},
 		methods: {
-			imgClick() {
+			imgClick(type) {
 				console.log(123)
+				this.show = !this.show
+				this.modeClass = type
+				setTimeout(() => {
+					this.show = !this.show
+					uni.navigateTo({
+						url: '../videoPage/videoPage'
+					});
+				}, 1000)
 			}
 		},
 	}
@@ -64,6 +80,20 @@
 	.container .Search input {
 		z-index: 1;
 		width: 500rpx;
+	}
+
+	.donghua {
+		position: relative;
+		width: 51vw;
+		height: 27vh;
+		top: -535px;
+		left: 65px;
+		background-color: rgba(255, 255, 255, 0.72);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 29px;
+
 	}
 
 	.container .xunlian {
