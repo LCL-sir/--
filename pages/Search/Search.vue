@@ -1,7 +1,9 @@
 <template>
 	<view class="container">
 		<view class="Search">
-			<img src="static/image/index/zsou.png" alt="">
+			<view class="kuang">
+				<img src="static/image/index/zsou.png" @click="imgClick()">
+			</view>
 			<div class="shuru">
 				<input type="text" placeholder="搜索课程" />
 			</div>
@@ -16,46 +18,64 @@
 </template>
 
 <script>
-export default {
-	data() {
-		return {
+	export default {
+		data() {
+			return {
 
-		}
-	},
-	onLoad(options) {
+			}
+		},
+		onLoad(options) {
 
-	},
-	onShow() {
+		},
+		onShow() {
 
-	},
-	methods: {
-
-	},
-}
+		},
+		methods: {
+			imgClick() {
+				console.log(123)
+			}
+		},
+	}
 </script>
 
 <style lang="scss" scoped>
-.container {
-	padding: 0 40rpx;
-}
+	.container {
+		padding: 0 40rpx;
+	}
 
-.container .Search {
-	margin-top: 40rpx;
-}
+	.container .Search {
+		margin-top: 40rpx;
+	}
 
-.container .Search input {
-	z-index: 1;
-}
+	.container .Search .kuang {
+		background-color: #f2f4f5;
+		height: 42px;
+		border-radius: 24px;
+	}
 
-.container .xunlian {
-	color: #334154;
-	margin-top: 20rpx;
-	margin-bottom: 20rpx;
-}
+	.container .Search .kuang img {
+		width: 40rpx;
+		height: 40rpx;
+		position: relative;
+		top: 24rpx;
+		left: 580rpx;
+	}
 
-.container .shuru {
-	position: relative;
-	top: -68rpx;
-	left: 114rpx;
-}
+	.container .Search input {
+		z-index: 1;
+		width: 500rpx;
+	}
+
+	.container .xunlian {
+		color: #334154;
+		margin-top: 20rpx;
+		margin-bottom: 20rpx;
+	}
+
+	.container .shuru {
+		position: relative;
+		top: -68rpx;
+		left: 52rpx;
+		width: 500rpx;
+	}
 </style>
